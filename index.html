@@ -1,11 +1,122 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
-    <link href="assets/style.css" rel="stylesheet" />
-    <title>CSS233 | UW Bothell</title>
+<meta charset="utf-8">
+<style type="text/css">
+
+body {
+    background-image: url("http://i.imgur.com/2nkkQUc.jpg");
+    }
+
+img {
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+.menu   {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    color: #FFFFFF;
+    background-color: #000000;
+    text-align: center;
+    padding: 0;
+    }
+
+.menu a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding-left: 10%;
+    padding-right: 10%;
+    }
+
+.menu a:hover {
+    text-decoration: underline;
+    background-color: #FFFFFF;
+    color: #000000;
+    }
+
+.title h1    {
+    padding: 20px;
+    font-size: 4.5em;
+    display: inline;
+    color: #FFFFFF;
+    }
+.title b    {
+    color: #777777;
+    font-size: 2.5em;
+    }
+
+section {
+    position: absolute;
+    border: solid 1px;
+    border-color: #989898;
+    background-color: #989898;
+    }
+
+.side {
+    width: 20%;
+    }
+
+.middle {
+    width: 50%;
+    left: 25%;
+    }
+
+.top {
+    position: absolute;
+    top: 30%;
+    }
+
+.left {
+    left: 0;
+    }
+
+.right {
+    right: 0;
+    }
+
+.book {
+    margin: 0;
+    }
+    
+.book img {
+    width: 100%;
+    }
+
+</style>
 </head>
 <body>
-<!-- Header -->
-<span class="header"><h1>CSS233</h1><b>Brought to you by team B</b></span>
+<div class="menu">
+<a href="#about">About</a>
+<a href="#books">Books</a>
+<a href="#blank1">Blank1</a>
+<a href="#blank2">Blank2</a>
+</div>
+<div class="title"><h1>Interactive Media Tech</h1><b>CSS233</b></div>
+<section class="introduction">
+<p>Interactive Media Technology at the University of Washington Bothell introduces students to HTML5, Cascading Stylesheets, and Javascript. Those who complete this class should be able to design, create, and implement professional webpages.</p>
+</section>
+<section id="blank1" class="top left side">
+This is blank 1
+</section>
+<section id="about" class="top middle">
+This is the about section.
+</section>
+<section id="books" class="top right side">
+<figure class="book book1" >
+<img src="">
+</figure>
+<figure class="book book2">
+<img src="">
+</figure>
+<figure class="book book3">
+<img src="http://www-fp.pearsonhighered.com/assets/hip/images/bigcovers/0321793935.jpg">
+</figure>
+</section>
+<section id="blank2" class="right side">
+This is Blank 2
+</section>
 </body>
 </html>
