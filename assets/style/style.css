@@ -1,5 +1,5 @@
 body {
-    background-image: url("../assets/background.jpg");
+    background-image: url("../img/background.jpg");
     }
 
 .menu   {
@@ -68,6 +68,7 @@ section {
     }
 #blank2 {
   	top: 500px;
+	margin-top:10px;
   }  
 .book img {
     width: 200px;
