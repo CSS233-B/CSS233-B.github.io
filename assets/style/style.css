@@ -18,50 +18,43 @@ body {
     padding-left: 10%;
     padding-right: 10%;
     }
-
 .menu a:hover {
     text-decoration: underline;
     background-color: #FFFFFF;
     color: #000000;
     }
-
 .title h1    {
     font-size: 4.5em;
     display: inline;
     color: #FFFFFF;
     }
-    
 .title b    {
     color: #777777;
     font-size: 2.5em;
     }
-
 section {
     position: absolute;
     background-color: #989898;
+	-moz-box-shadow: 3px 7px 32px #000000;
+	-webkit-box-shadow: 3px 7px 32px #000000;
+	box-shadow: 3px 7px 32px #000000;
     }
-
 .side {
     width: 20%;
     }
-
 .middle {
     width: 50%;
     left: 25%;
     }
-
 .top {
     top: 200px;
     }
-
 .left {
     left: 0;
     }
-
 .right {
     right: 0;
     }
-
 .book {
     margin: 0;
     text-align: center;
@@ -71,5 +64,6 @@ section {
 	margin-top:10px;
   }  
 .book img {
-    width: 200px;
+	height: 100px;
+	margin-top:10px;
     }
