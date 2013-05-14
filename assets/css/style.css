@@ -1,8 +1,7 @@
-body {
-    background-image: url("../img/background.jpg");
-    }
-
-.menu   {
+body{
+    background-image: url("http://i.imgur.com/2nkkQUc.jpg");
+}
+.menu{
     position: absolute;
     width: 100%;
     top: 0;
@@ -11,7 +10,6 @@ body {
     text-align: center;
     padding: 0;
     }
-
 .menu a {
     color: #FFFFFF;
     text-decoration: none;
@@ -23,21 +21,21 @@ body {
     background-color: #FFFFFF;
     color: #000000;
     }
-.title h1    {
+.title h1{
     font-size: 4.5em;
     display: inline;
     color: #FFFFFF;
     }
-.title b    {
+.title b{
     color: #777777;
     font-size: 2.5em;
     }
 section {
     position: absolute;
     background-color: #989898;
-	-moz-box-shadow: 3px 7px 32px #000000;
-	-webkit-box-shadow: 3px 7px 32px #000000;
-	box-shadow: 3px 7px 32px #000000;
+    -moz-box-shadow: 3px 7px 32px #000000;
+    -webkit-box-shadow: 3px 7px 32px #000000;
+    box-shadow: 3px 7px 32px #000000;
     }
 .side {
     width: 20%;
@@ -50,20 +48,27 @@ section {
     top: 200px;
     }
 .left {
-    left: 0;
+    left: 2%;
     }
 .right {
-    right: 0;
+    right: 2%;
     }
 .book {
     margin: 0;
     text-align: center;
     }
 #blank2 {
-  	top: 500px;
-	margin-top:10px;
+        top: 500px;
+        margin-top:10px;
   }  
 .book img {
-	height: 100px;
-	margin-top:10px;
+        height: 100px;
+        margin-top:10px;
+    }
+.introduction{
+    padding-left:10px;
+    padding-right:10px;
+    }
+#RelevantLinks{
+    
     }
