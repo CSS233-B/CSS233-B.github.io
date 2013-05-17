@@ -2,7 +2,9 @@
 <html>
    <head>
       <meta charset="utf-8">
-	   <link rel='stylesheet' href='./assets/css/style.css'>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap-responsive.min.css">
+	   <!-- <link rel="stylesheet" href="assets/css/style.css">-->
    </head>
    <body>
       <div class="menu">
@@ -15,15 +17,21 @@
          <h1>Interactive Media Tech</h1>
          <b>CSS233</b>
       </div>
-      <section class="introduction left right">
-        <p>This course examines the core technologies used to design, build and support media applications. Create interactive media projects using media production processes and tools; applying programming constructs, incorporating text and multimedia content, and using standard formats and language.Throughout this course students will be learning HTML5, CSS and Javascript- a combination of languages that are used toda by many web developers around the web. Through familiarity with these languages along with an understanding of media application design and development, students will find themselves able to understand and compete with today's leading web developers.</p>
-      </section>
-      <section id="RelevantLinks" class="top left side">
+      <div class="row">
+          <section class="introduction left right span10 offset1">
+            <p>This course examines the core technologies used to design, build and support media applications. Create interactive media projects using media production processes and tools; applying programming constructs, incorporating text and multimedia content, and using standard formats and language.Throughout this course students will be learning HTML5, CSS and Javascript- a combination of languages that are used toda by many web developers around the web. Through familiarity with these languages along with an understanding of media application design and development, students will find themselves able to understand and compete with today's leading web developers.</p>
+          </section>
+      </div>
+      <div class="row">
+      <div class="span2">
+      <section id="RelevantLinks" class="top left">
       <h2 align="center">Relevant Links</h2>
          <ul>
              <li><a href="http://www.codecademy.com">Code Academy</a></li>
          </ul>
       </section>
+      </div>
+      <div class="span8 offset1">
       <section id="about" class="top middle">
          <h2 class="h2">Learning Objectives:</h2>
                         <ul>
@@ -36,6 +44,8 @@
                         <li>Describe and follow common processes and tools used for managing team projects.</li>
                         </ul>
       </section>
+      </div>
+      <div class="span2">
       <section id="books" class="top right side">
                 <h2 class="h2" align="center">Required Books</h2>
          <figure class="book book1" >
@@ -51,5 +61,8 @@
       <section id="blank2" class="right side">
          This is Blank 2
       </section>
+      </div>
+      </div>
+      <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
    </body>
 </html>
