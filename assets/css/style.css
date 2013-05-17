@@ -16,6 +16,9 @@
     padding-left: 10%;
     padding-right: 10%;
     }
+#RelevantLinks > ul{
+	list-style-type:none;
+}
 .menu a:hover {
     text-decoration: underline;
     background-color: #FFFFFF;
@@ -30,13 +33,24 @@
     color: #777777;
     font-size: 2.5em;
     }
+.wrapper{
+	width:1628px;
+	margin:0;
+}
 section {
-    position: absolute;
+	float:left;
     background-color: #989898;
     -moz-box-shadow: 3px 7px 32px #000000;
     -webkit-box-shadow: 3px 7px 32px #000000;
     box-shadow: 3px 7px 32px #000000;
+	margin:10px 20px 0;
     }
+/*#about{
+	width:500px;
+}*/
+#blank2{
+	float:right;
+}
 .side {
     width: 20%;
     }
