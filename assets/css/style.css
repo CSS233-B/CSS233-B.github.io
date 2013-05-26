@@ -1,6 +1,5 @@
  body{
-        background-image: url("http://i.imgur.com/2nkkQUc.jpg");
-        }
+}
 .menu{
     position: absolute;
     width: 100%;
@@ -34,7 +33,7 @@
     font-size: 2.5em;
     }
 .wrapper{
-	width:1628px;
+	width:100%;
 	margin:0;
 }
 section {
@@ -55,7 +54,7 @@ section {
     width: 20%;
     }
 .middle {
-    width: 50%;
+    width: 75%;
     left: 25%;
     }
 .top {
@@ -65,7 +64,7 @@ section {
     left: 2%;
     }
 .right {
-    right: 2%;
+    right: 4%;
     }
 .book {
     margin: 0;
