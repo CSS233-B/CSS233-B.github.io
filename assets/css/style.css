@@ -1,32 +1,12 @@
  body{
 }
-.menu{
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color: #000000;
-    text-align: center;
-    padding: 0;
-    }
-.menu a {
-    color: #FFFFFF;
-    text-decoration: none;
-    padding-left: 10%;
-    padding-right: 10%;
-    }
 #RelevantLinks > ul{
 	list-style-type:none;
 }
-.menu a:hover {
-    text-decoration: underline;
-    background-color: #FFFFFF;
-    color: #000000;
-    }
 .title h1{
     font-size: 4.5em;
     display: inline;
-    color: #FFFFFF;
+    color: #000000;
     }
 .title b{
     color: #777777;
