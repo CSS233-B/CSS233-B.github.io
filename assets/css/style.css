@@ -4,3 +4,9 @@
 .sidebar ul {
     text-align: left;
     }
+.box    {
+    background-color: #eee;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    }
