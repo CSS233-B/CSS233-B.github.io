@@ -1,5 +1,17 @@
 $(document).ready(function(){
 	$('#haverbeke').click(function(){
-		$.get('haverbeke.html');
+		$.get('haverbeke.html',function(data){
+			$('#about').html(data);
+		});
+	});
+	$('#cruse').click(function(){
+		$.get('cruse.html',function(data){
+			$('#about').html(data);
+		});
+	});
+	$('#devlin').click(function(){
+		$.get('devlin.html',function(data){
+			$('#about').html(data);
+		});
 	});
 });
