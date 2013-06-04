@@ -27,17 +27,17 @@ $(document).ready(function(){
     }
     
 	$('#haverbeke').click(function(){
-		$.get('haverbeke.html',function(data){
+		$.get('/includes/haverbeke.html',function(data){
             current = swap(current, data, "haverbeke");
 		});
 	});
 	$('#cruse').click(function(){
-		$.get('cruse.html',function(data){
+		$.get('/includes/cruse.html',function(data){
             current = swap(current, data, "cruse");
 		});
 	});
 	$('#devlin').click(function(){
-		$.get('devlin.html',function(data){
+		$.get('/includes/devlin.html',function(data){
             current = swap(current, data, "devlin");
 		});
 	});
