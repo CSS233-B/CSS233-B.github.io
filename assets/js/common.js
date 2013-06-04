@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	//$('#titleText').show("blind",1000)//.effect('blind',{direction:"left"},400,)
+	//$('#titleText').show("blind",1000) //.effect('blind',{direction:"left"},400
     var current = $("#placeholder");
     $(window).bind('popstate',  
         function(event) {
