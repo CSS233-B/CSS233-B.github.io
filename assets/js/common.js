@@ -1,11 +1,12 @@
 $(document).ready(function(){
-    var current = $("#about");
+    var current = $("#placeholder");
     $(window).bind('popstate',  
         function(event) {
-            stateshit = event;
-            console.log(event.currentTarget.location.pathname.replace("/",""));
-            name = event.currentTarget.location.pathname.replace("/","")
-            $.get(name + '.html',function(data){
+            path = event.currentTarget.location.pathname.replace("/","");
+            if(path == "" || event.currentTarget == undefined) {
+                path = "index";
+            }
+            $.get("/includes/" + path + '.html',function(data){
                 current = swap(current, data);
             });
         });
