@@ -3,8 +3,8 @@ $(document).ready(function(){
     $(window).bind('popstate',  
         function(event) {
             stateshit = event;
-            console.log(event.currentTarget.location.pathname.replace("/CSS233/",""));
-            name = event.currentTarget.location.pathname.replace("/CSS233/","")
+            console.log(event.currentTarget.location.pathname.replace("/",""));
+            name = event.currentTarget.location.pathname.replace("/","")
             $.get(name + '.html',function(data){
                 current = swap(current, data);
             });
