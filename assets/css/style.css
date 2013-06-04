@@ -10,4 +10,7 @@
     -moz-border-radius: 3px;
     border-radius: 3px;
     }
-    
+#box2   {
+    display: none;
+    opacity: 0;
+    }
