@@ -1,6 +1,9 @@
 $(document).ready(function(){
     var current = $("#about");
-    $(document).on("popstate", function(e) {console.log(e);});
+    $(window).bind('popstate',  
+        function(event) {
+            console.log('pop: ' + event.state);
+        });
     function swap(curent, data, name) {
         window.history.pushState(document.state, name, "/" + name);
         next = $("<div>" + data + "</div>").css("opacity",0).addClass("box slide");
