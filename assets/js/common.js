@@ -2,10 +2,15 @@ $(document).ready(function(){
     var current = $("#about");
     $(window).bind('popstate',  
         function(event) {
-            console.log('pop: ' + event.state);
+            console.log(event.currentTarget.location.path.replace("/",""));
+            $.get(event.currentTarget.location.path.replace("/","") + '.html',function(data){
+                current = swap(current, data);
+            });
         });
     function swap(curent, data, name) {
-        window.history.pushState(document.state, name, "/" + name);
+        if(name != undefined) {
+            window.history.pushState(document.state, name, "/" + name);
+        }
         next = $("<div>" + data + "</div>").css("opacity",0).addClass("box slide");
         current.hide('slide', {}, 400, function() {
             $(this).parent().append(next);
