@@ -12,7 +12,7 @@ $(document).ready(function(){
     function swap(curent, data, name) {
         var options = {direction: "left"}
         if(name != undefined) {
-            window.history.pushState(document.state, name, "/CSS233/" + name);
+            window.history.pushState(document.state, name, "/" + name);
         } else {
             var options = {direction: "right"}
         }
