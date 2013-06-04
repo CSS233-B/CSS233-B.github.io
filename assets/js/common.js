@@ -2,17 +2,22 @@ $(document).ready(function(){
     var current = $("#about");
     $(window).bind('popstate',  
         function(event) {
-            console.log(event.currentTarget.location.pathname.replace("/",""));
-            $.get(event.currentTarget.location.pathname.replace("/","") + '.html',function(data){
+            stateshit = event;
+            console.log(event.currentTarget.location.pathname.replace("/CSS233/",""));
+            name = event.currentTarget.location.pathname.replace("/CSS233/","")
+            $.get(name + '.html',function(data){
                 current = swap(current, data);
             });
         });
     function swap(curent, data, name) {
+        var options = {direction: "left"}
         if(name != undefined) {
-            window.history.pushState(document.state, name, "/" + name);
+            window.history.pushState(document.state, name, "/CSS233/" + name);
+        } else {
+            var options = {direction: "right"}
         }
         next = $("<div>" + data + "</div>").css("opacity",0).addClass("box slide");
-        current.hide('slide', {}, 400, function() {
+        current.hide('slide', options, 400, function() {
             $(this).parent().append(next);
             next.show().animate({opacity: 1});
             }
