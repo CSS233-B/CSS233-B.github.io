@@ -2,8 +2,8 @@ $(document).ready(function(){
     var current = $("#about");
     $(window).bind('popstate',  
         function(event) {
-            console.log(event.currentTarget.location.path.replace("/",""));
-            $.get(event.currentTarget.location.path.replace("/","") + '.html',function(data){
+            console.log(event.currentTarget.location.pathname.replace("/",""));
+            $.get(event.currentTarget.location.pathname.replace("/","") + '.html',function(data){
                 current = swap(current, data);
             });
         });
