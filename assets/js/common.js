@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	$('#titleText').show("blind",1000)//.effect('blind',{direction:"left"},400,)
     var current = $("#placeholder");
     $(window).bind('popstate',  
         function(event) {
@@ -25,7 +26,6 @@ $(document).ready(function(){
         );
         return next;
     }
-    
 	$('#haverbeke').click(function(){
 		$.get('/includes/haverbeke.html',function(data){
             current = swap(current, data, "haverbeke");
