@@ -1,9 +1,17 @@
+body {
+	margin: 10 10 0 10  !important;
+}
+
 .sidebar  {
     text-align: center;
     }
 .sidebar ul {
     text-align: left;
     }
+
+figure{
+	margin-bottom:8 !important;
+}
 .box    {
     background-color: #eee;
     -webkit-border-radius: 3px;
@@ -14,6 +22,9 @@
     display: none;
     opacity: 0;
     }
+#books {
+	margin-bottom: 0 !important;;
+}
 #books > figure:hover{
 	cursor:pointer;
 }
