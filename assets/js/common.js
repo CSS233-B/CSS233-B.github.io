@@ -1,7 +1,7 @@
 $(document).ready(function(){
     var current = $("#about");
     
-    function swap(current, data) {
+    function swap(curent, data) {
         next = $("<div>" + data + "</div>").css("opacity",0).addClass("box slide");
         current.hide('slide', {}, 400, function() {
             $(this).parent().append(next);
