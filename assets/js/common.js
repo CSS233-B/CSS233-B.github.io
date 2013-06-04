@@ -3,8 +3,8 @@ $(document).ready(function(){
     
     function swap(curent, data) {
         next = $("<div>" + data + "</div>").css("opacity",0).addClass("box slide");
-        current.animate({opacity: 0}, 400, "swing", function() {
-            $(this).hide().parent().append(next);
+        current.hide('puff', {}, 400, function() {
+            $(this).parent().append(next);
             next.show().animate({opacity: 1});
             }
         );
