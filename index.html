@@ -12,6 +12,10 @@
         </div>
         <div class="row-fluid">
             <div class="span2 sidebar">
+				<div class="box">
+                    <b>Class Video</b>
+					<a href="#videoModal" role="button" class="btn" data-toggle="modal">Launch Video</a>
+                </div>
                 <div id="links" class="box">
                     <b>Relevant Links</b>
                     <ul>
@@ -19,14 +23,6 @@
                         <li><a href="http://www.developers.mozilla.org">Mozilla Developer Network</a></li>
                         <li><a href="http://www.HTMLpad.org">HTML pad</a></li>
                         <li><a href="http://www.css3maker.com">CSS 3.0 Maker</a></li>
-                    </ul>
-                </div>
-                <div class="box">
-                    <b>Some other shit</b>
-                    <ul>
-                        <li>Derp</li>
-                        <li>Derp</li>
-                        <li>Derp</li>
                     </ul>
                 </div>
             </div>
@@ -47,6 +43,18 @@
                 </figure>
             </div>
         </div>
+		<div id="videoModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+				<h3 id="myModalLabel">Class Video</h3>
+			</div>
+				<div class="modal-body">
+				<p>One fine body…</p>
+			</div>
+			<div class="modal-footer">
+			</div>
+		</div>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
         <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
