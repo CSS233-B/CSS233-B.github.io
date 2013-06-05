@@ -67,7 +67,7 @@
 		</div>
         <script type="text/javascript">
         <?
-        if(isfile("config.php") {
+        if(is_file("config.php")) {
             require("config.php");
         }
         if(isset($baseurl)) {
