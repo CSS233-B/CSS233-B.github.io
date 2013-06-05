@@ -65,7 +65,18 @@
 			<div class="modal-footer">
 			</div>
 		</div>
-
+        <script type="text/javascript">
+        <?
+        if(isfile("config.php") {
+            require("config.php");
+        }
+        if(isset($baseurl)) {
+            echo "var baseurl = \"".$baseurl."\";";
+        } else {
+            echo "var baseurl = \"/\";";
+        }
+        ?>
+        </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
         <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>

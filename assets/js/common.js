@@ -3,11 +3,11 @@ $(document).ready(function(){
     var current = $("#placeholder");
     $(window).bind('popstate',  
         function(event) {
-            path = event.currentTarget.location.pathname.replace("/","");
+            path = event.currentTarget.location.pathname.replace(baseurl,"");
             if(path == "" || event.currentTarget == undefined) {
                 path = "index";
             }
-            $.get("/includes/" + path + '.html',function(data){
+            $.get(baseurl + "includes/" + path + '.html',function(data){
                 current = swap(current, data);
             });
         });
