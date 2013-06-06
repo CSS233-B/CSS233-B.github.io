@@ -1,4 +1,9 @@
-<html>
+<? if(!is_file(".htaccess")) {
+    $htaccess = fopen(".htaccess", "w+");
+    fwrite($htaccess, "RewriteEngine On\nRewriteRule !\\.(js|css|html|php|png)$ ".$_SERVER['SCRIPT_NAME']." [L]");
+    fclose($htaccess);
+}
+?><html>
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="assets/css/style.css">
