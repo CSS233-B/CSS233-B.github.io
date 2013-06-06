@@ -1,3 +1,2 @@
 RewriteEngine On
-RewriteCond %{REQUEST_URI}	!^/includes/
-RewriteRule /*			index.php [L]
+RewriteRule !\.(js|css|html|php|png)$ /CSS233/index.php [L]
