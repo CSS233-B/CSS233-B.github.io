@@ -32,9 +32,7 @@ $(document).ready(function(){
     }
     $(".menu a").each(function(key, item) {
         $(item).click(function() {
-            $.get("includes/" + $(item).attr("href") + ".html", function(data) {
-                current = swap(current, data, $(item).attr("href"));
-            });
+            loadPage($(item).attr("href"));
             return false;
         });
     });
