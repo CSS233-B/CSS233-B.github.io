@@ -1,0 +1,2 @@
+RewriteEngine On
+RewriteRule !\.(js|css|html|php|png)$ /CSS233/index.php [L]

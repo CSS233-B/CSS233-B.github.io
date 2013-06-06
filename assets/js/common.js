@@ -1,16 +1,19 @@
 $(document).ready(function(){
-	//$('#titleText').show("blind",1000) //.effect('blind',{direction:"left"},400
     var current = $("#placeholder");
     $(window).bind('popstate',  
         function(event) {
-            path = event.currentTarget.location.pathname.split("/")[-1]
-            if(path == "" || event.currentTarget == undefined) {
-                path = "index";
-            }
-            $.get("includes/" + path + '.html',function(data){
-                current = swap(current, data);
-            });
+            loadPage(event.currentTarget.location.pathname);
         });
+    function loadPage(path) {
+            if(path == "" || path == undefined) {
+                path = window.location.pathname.split("/");
+                path = path[path.length-1];
+            }
+            console.log(path);
+            $.get("includes/" + path + '.html',function(data){
+                current = swap(current, data, path);
+            });
+        }
     function swap(curent, data, name) {
         var options = {direction: "left"}
         if(name != undefined) {
@@ -28,10 +31,9 @@ $(document).ready(function(){
     }
     $(".menu a").each(function(key, item) {
         $(item).click(function() {
-            $.get("includes/" + $(item).attr("href") + ".html", function(data) {
-                current = swap(current, data, $(item).attr("href"));
-            });
+            loadPage($(item).attr("href"));
             return false;
         });
     });
+    loadPage()
 });
