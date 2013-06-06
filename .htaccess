@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{REQUEST_URI}	!^/includes/
+RewriteRule /*			index.php [L]
