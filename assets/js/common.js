@@ -2,7 +2,6 @@ $(document).ready(function(){
     var current = $("#placeholder");
     $(window).bind('popstate',  
         function(event) {
-<<<<<<< HEAD
             loadPage(event.currentTarget.location.pathname);
         });
     function loadPage(path) {
@@ -13,13 +12,6 @@ $(document).ready(function(){
             }
             console.log(path);
             $.get("includes/" + path + '.html',function(data){
-=======
-            path = event.currentTarget.location.pathname.replace(baseurl,"");
-            if(path == "" || event.currentTarget == undefined) {
-                path = "index";
-            }
-            $.get(baseurl + "includes/" + path + '.html',function(data){
->>>>>>> 38c994cba957eb8edd8e747a822729c125254e30
                 current = swap(current, data);
             });
         }
