@@ -1,6 +1,2 @@
 RewriteEngine On
-<<<<<<< HEAD
 RewriteRule !\.(js|css|html|php|png)$ /CSS233/index.php [L]
-=======
-RewriteRule ^/.*?$ /index.php [L]
->>>>>>> 38c994cba957eb8edd8e747a822729c125254e30

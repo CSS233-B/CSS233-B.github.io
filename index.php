@@ -59,7 +59,6 @@
                 </div>
             </div>
         </div>
-<<<<<<< HEAD:index.php
     <div id="videoModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
@@ -76,35 +75,11 @@
         </div>
     </div>
 
-=======
-		<div id="videoModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-				<h3 id="myModalLabel">Class Video</h3>
-			</div>
-				<div class="modal-body">
-				<p>One fine body…</p>
-			</div>
-			<div class="modal-footer">
-			</div>
-		</div>
-        <script type="text/javascript">
-        <?
-        if(is_file("config.php")) {
-            require("config.php");
-        }
-        if(isset($baseurl)) {
-            echo "var baseurl = \"".$baseurl."\";";
-        } else {
-            echo "var baseurl = \"/\";";
-        }
-        ?>
-        </script>
->>>>>>> 38c994cba957eb8edd8e747a822729c125254e30:index.php
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.1/jquery.min.js"></script>
         <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/common.js"></script>
+        <!--<script type="text/javascript">loadPage("<? echo($_SERVER['REQUEST_URI']); ?>");</script>-->
     </body>
 </html>
