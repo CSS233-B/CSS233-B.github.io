@@ -11,7 +11,7 @@ $(document).ready(function(){
             }
             console.log(path);
             $.get("includes/" + path + '.html',function(data){
-                current = swap(current, data);
+                current = swap(current, data, path);
             });
         }
     function swap(curent, data, name) {
@@ -35,4 +35,5 @@ $(document).ready(function(){
             return false;
         });
     });
+    loadPage()
 });
