@@ -80,6 +80,5 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/common.js"></script>
-        <script type="text/javascript">loadPage("<? echo($_SERVER['REQUEST_URI']); ?>");</script>
     </body>
 </html>
