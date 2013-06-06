@@ -29,7 +29,17 @@ figure{
 	cursor:pointer;
 }
 .MenuBar{
+cursor:pointer !important;
 text-align:center !important;
+}
+.MenuBar >a {
+	text-decoration:none;
+	padding-left:10% !important;
+	padding-right:10% !important;
+}
+
+#reqbooktxt{
+	margin-top:0%;
 }
 
 #cruse  > img{

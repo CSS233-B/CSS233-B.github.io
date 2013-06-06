@@ -1,0 +1,14 @@
+body{margin:10 10 0 10!important;}
+.sidebar{text-align:center;}
+.sidebar ul{text-align:left;}
+figure{margin-bottom:8!important;}
+.box{background-color:#eee;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
+#box2{display:none;opacity:0;}
+#books{margin-bottom:0!important;}
+#books>figure:hover{cursor:pointer;}
+.MenuBar{cursor:pointer!important;text-align:center!important;}
+.MenuBar>a{text-decoration:none;padding-left:10%!important;padding-right:10%!important;}
+#reqbooktxt{margin-top:0%;}
+#cruse>img{height:150px;}
+#haverbeke>img{height:150px;}
+#devlin>img{height:150px;}
