@@ -5,7 +5,6 @@ $(document).ready(function(){
             loadPage(event.currentTarget.location.pathname);
         });
     function loadPage(path) {
-            path = path.split("/")[path.length-1];
             if(path == "" || path == undefined) {
                 path = window.location.pathname.split("/");
                 path = path[path.length-1];
