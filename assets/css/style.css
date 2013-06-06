@@ -39,11 +39,9 @@ text-align:center !important;
 	padding-left:10% !important;
 	padding-right:10% !important;
 }
-
-#reqbooktxt{
-	margin-top:0%;
+#links{
+	height:450px
 }
-
 #cruse  > img{
 height: 150px;
 }
