@@ -41,4 +41,14 @@ $(document).ready(function(){
             current = swap(current, data, "devlin");
 		});
 	});
+	$('#Browsers').click(function(){
+		$.get('/includes/webbrowser.html',function(data){
+            current = swap(current, data, "webbrowser");
+		});
+	});
+	$('#fzilla').click(function(){
+		$.get('/includes/filezilla.html',function(data){
+            current = swap(current, data, "fzilla");
+		});
+	});
 });

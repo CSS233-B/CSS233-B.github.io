@@ -23,8 +23,21 @@ figure{
     opacity: 0;
     }
 #books {
-	margin-bottom: 0 !important;;
+	margin-bottom: 0 !important;
 }
 #books > figure:hover{
 	cursor:pointer;
+}
+.MenuBar{
+text-align:center !important;
+}
+
+#cruse  > img{
+height: 150px;
+}
+#haverbeke > img{
+height: 150px;
+}
+#devlin > img{
+height: 150px;
 }
