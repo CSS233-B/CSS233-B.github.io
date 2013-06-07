@@ -71,9 +71,9 @@
         </div>
         <div class="modal-body">
 			<video width="500" height="350" controls>
-                <source src="assets/video/video.webm" type="video/webm">
-                <source src="assets/video/video.ogg" type="video/ogg">
-                <source src="assets/video/CSS233Video.mp4" type="video/mp4">
+                <source src="assets/video/CSS_Video.webm" type="video/webm">
+                <source src="assets/video/CSS_Video.ogg" type="video/ogg">
+                <source src="assets/video/CSS_Video.mp4" type="video/mp4">
 			</video>
         </div>
         <div class="modal-footer">
