@@ -34,6 +34,7 @@
                 <div class="box menu">
                     <h3>Helpful Hints</h3>
                     <ul class="menu">
+                        <li><a href="about">About the course</a></li>
                         <li><a href="browsers">Browsers</a></li>
                         <li><a href="homework">Homework</a></li>
                         <li><a href="filezilla">FileZilla</a></li>
