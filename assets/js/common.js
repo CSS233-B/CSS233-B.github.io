@@ -2,7 +2,9 @@ $(document).ready(function(){
     var current = $("#placeholder");
     $(window).bind('popstate',  
         function(event) {
-            loadPage(event.currentTarget.location.pathname);
+            path = event.currentTarget.location.pathname.split("/");
+            path = path[path.length-1];
+            loadPage(path);
             console.log(event);
         });
     function loadPage(path) {
@@ -10,7 +12,6 @@ $(document).ready(function(){
                 path = window.location.pathname.split("/");
                 path = path[path.length-1];
             }
-            console.log(path);
             $.get("includes/" + path + '.html',function(data){
                 current = swap(current, data, path);
             });
