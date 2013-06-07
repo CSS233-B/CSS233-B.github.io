@@ -3,6 +3,7 @@ $(document).ready(function(){
     $(window).bind('popstate',  
         function(event) {
             loadPage(event.currentTarget.location.pathname);
+            console.log(event);
         });
     function loadPage(path) {
             if(path == "" || path == undefined) {
