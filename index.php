@@ -1,6 +1,6 @@
 <? if(!is_file(".htaccess")) {
     $htaccess = fopen(".htaccess", "w+");
-    fwrite($htaccess, "RewriteEngine On\nRewriteRule !\\.(js|css|html|php|png)$ ".$_SERVER['SCRIPT_NAME']." [L]");
+    fwrite($htaccess, "RewriteEngine On\nRewriteRule !\\.(js|css|html|ogg|mp4|webm|php|png)$ ".$_SERVER['SCRIPT_NAME']." [L]");
     fclose($htaccess);
 }
 ?><html>
